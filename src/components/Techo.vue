@@ -231,8 +231,8 @@ export default {
         return {
         loader: false,
         modal: false,
-        clientetext: '',
-        cliente: '',
+        // clientetext: '',
+        // cliente: '',
         // urlp: 'negro.png',
              //variable que cambia el color del exterior
         urlprincipal: 'techo-bell',
@@ -416,6 +416,26 @@ export default {
                         // doc.setTextColor(0, 0, 0)
                         // doc.setFontType('normal')
                         // doc.text(5, 197, `Tener en cuenta: ${ clientetext }`)
+                        doc.setFontSize(11)
+                        doc.setTextColor(0, 0, 0)
+                        doc.setFontType('normal')
+                        doc.text(5, 200, 'Si quieres recibir la mejor asesoría en cuanto a costos, materiales y acabados del diseño personalizado ')
+
+                        doc.setFontSize(11)
+                        doc.setTextColor(0, 0, 0)
+                        doc.setFontType('normal')
+                        doc.text(5, 205, 'que acabaste de realizar, te invitamos a que nos contactes a través de ')
+
+                        // 254, 51, 10
+                        // , te invitamos a que nos escribas a nuestro whatsapp
+                        doc.setFontSize(11)
+                        doc.setTextColor(254, 51, 10)
+                        doc.textWithLink('nuestro whatsapp +573143036167', 128, 205, {url: 'https://wa.me/573143036167?text=Buen%20dia,%20Deseo%20realizar%20una%20Cotizaci%C3%B3n'});
+
+
+                        doc.setDrawColor(254, 51, 10)
+                        doc.line(128, 206, 188, 206)
+
 
                          doc.setFontSize(10)
                         doc.setTextColor(0, 0, 0)
@@ -517,6 +537,25 @@ export default {
                         // doc.setTextColor(0, 0, 0)
                         // doc.setFontType('normal')
                         // doc.text(5, 197, `Tener en cuenta: ${ clientetext }`)
+                         doc.setFontSize(11)
+                        doc.setTextColor(0, 0, 0)
+                        doc.setFontType('normal')
+                        doc.text(5, 270, 'Si quieres recibir la mejor asesoría en cuanto a costos, materiales y acabados del diseño personalizado ')
+
+                        doc.setFontSize(11)
+                        doc.setTextColor(0, 0, 0)
+                        doc.setFontType('normal')
+                        doc.text(5, 275, 'que acabaste de realizar, te invitamos a que nos contactes a través de ')
+
+                        // 254, 51, 10
+                        // , te invitamos a que nos escribas a nuestro whatsapp
+                        doc.setFontSize(11)
+                        doc.setTextColor(254, 51, 10)
+                        doc.textWithLink('nuestro whatsapp +573143036167', 128, 275, {url: 'https://wa.me/573143036167?text=Buen%20dia,%20Deseo%20realizar%20una%20Cotizaci%C3%B3n'});
+
+
+                        doc.setDrawColor(254, 51, 10)
+                        doc.line(128, 276, 188, 276)
 
                          doc.setFontSize(10)
                         doc.setTextColor(0, 0, 0)

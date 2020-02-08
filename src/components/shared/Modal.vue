@@ -9,10 +9,13 @@
             
             <div class="cont-social">
                 <a href="https://www.facebook.com/tapizadosnewcars/" target="_blank">
-                    <li class="fab fa-facebook"></li>
+                    <i class="fab fa-facebook"></i>
                 </a>
                 <a href="https://www.instagram.com/tapizados_newcars/" target="_blank">
-                    <li class="fab fa-instagram"></li>
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/573143036167?text=Buen%20dia,%20Deseo%20realizar%20una%20Cotizaci%C3%B3n" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
                 </a>
             </div>
 
@@ -44,16 +47,18 @@ export default {
    
     a {
         text-decoration: none;
+        
     }
-    a li {
+    .cont-social a i {
         transition: all .3s ease-in-out;
         padding:10px;
         font-size: 35px;
         color:#FE330A;
+        cursor:url("../../assets/img/cursor-pointer.png"), auto;
         /* border-radius: 80px; */
     }
 
-    a:hover li {
+    .cont-social a:hover i {
         padding:10px 10px;
         font-size: 35px;
         color:black;
@@ -70,7 +75,8 @@ export default {
 
     .buttons_modal .v-btn {
         font-size: 14px;
-        padding:8px;   
+        padding:8px;  
+         cursor:url("../../assets/img/cursor-pointer.png"), auto;
     }
     .v-icon {
         font-size: 14px;

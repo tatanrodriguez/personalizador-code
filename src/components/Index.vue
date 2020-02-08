@@ -24,7 +24,7 @@
         <transition name="cambio-fade" mode="out-in" appear>
             <div class="a4">
                 <p>
-                    Software diseñado y desarrollado por <strong>A4 Identidad Digital</strong>
+                    Software diseñado y desarrollado por <strong> <a href="https://www.identidaddigital.co" target="_blank">A4 Identidad Digital </a></strong>
                 </p>
                 <p>
                     Copyright © todos los derechos reservados - Tapizados New Car's - 2019 - 2020

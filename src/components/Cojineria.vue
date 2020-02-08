@@ -261,8 +261,8 @@ export default {
     data: () => ({
         loader: false,
         modal: false,
-        clientetext: '',
-        cliente: '',
+        // clientetext: '',
+        // cliente: '',
         //variable que cambia el color del exterior
         urlext: 'exterior-negro.png',
         //variable que cambia el color del interior
@@ -499,6 +499,27 @@ export default {
                         // doc.setTextColor(0, 0, 0)
                         // doc.setFontType('normal')
                         // doc.text(5, 280, 'Cualquier uso indebido sin autorizacion')
+                        
+
+                        doc.setFontSize(11)
+                        doc.setTextColor(0, 0, 0)
+                        doc.setFontType('normal')
+                        doc.text(5, 200, 'Si quieres recibir la mejor asesoría en cuanto a costos, materiales y acabados del diseño personalizado ')
+
+                        doc.setFontSize(11)
+                        doc.setTextColor(0, 0, 0)
+                        doc.setFontType('normal')
+                        doc.text(5, 205, 'que acabaste de realizar, te invitamos a que nos contactes a través de ')
+
+                        // 254, 51, 10
+                        // , te invitamos a que nos escribas a nuestro whatsapp
+                        doc.setFontSize(11)
+                        doc.setTextColor(254, 51, 10)
+                        doc.textWithLink('nuestro whatsapp +573143036167', 128, 205, {url: 'https://wa.me/573143036167?text=Buen%20dia,%20Deseo%20realizar%20una%20Cotizaci%C3%B3n'});
+
+
+                        doc.setDrawColor(254, 51, 10)
+                        doc.line(128, 206, 188, 206)
 
                         doc.setFontSize(10)
                         doc.setTextColor(0, 0, 0)
@@ -523,15 +544,7 @@ export default {
                 //creando el elemento html del canvas
                 let canvasElement = document.createElement('canvas');
                 
-                
-                // let cliente = this.cliente
-                // let clientetext = this.clientetext
-                
-                // let mouse = document.getElementsByTagName('body')[0];
-
-                // mouse.style.cursor = "url('../assets/img/cursor-pointer.png'), pointer";
-                // mouse.style.cursor = "pointer";
-
+            
                 //creando el html canvas
                 html2canvas(this.$refs.filepdf, { canvas: canvasElement })
                     .then(function (canvas) {
@@ -604,6 +617,27 @@ export default {
                         // doc.setTextColor(0, 0, 0)
                         // doc.setFontType('normal')
                         // doc.text(5, 197, `Tener en cuenta: ${ clientetext }`)
+
+                        doc.setFontSize(11)
+                        doc.setTextColor(0, 0, 0)
+                        doc.setFontType('normal')
+                        doc.text(5, 270, 'Si quieres recibir la mejor asesoría en cuanto a costos, materiales y acabados del diseño personalizado ')
+
+                        doc.setFontSize(11)
+                        doc.setTextColor(0, 0, 0)
+                        doc.setFontType('normal')
+                        doc.text(5, 275, 'que acabaste de realizar, te invitamos a que nos contactes a través de ')
+
+                        // 254, 51, 10
+                        // , te invitamos a que nos escribas a nuestro whatsapp
+                        doc.setFontSize(11)
+                        doc.setTextColor(254, 51, 10)
+                        doc.textWithLink('nuestro whatsapp +573143036167', 128, 275, {url: 'https://wa.me/573143036167?text=Buen%20dia,%20Deseo%20realizar%20una%20Cotizaci%C3%B3n'});
+
+
+                        doc.setDrawColor(254, 51, 10)
+                        doc.line(128, 276, 188, 276)
+
 
                          doc.setFontSize(10)
                         doc.setTextColor(0, 0, 0)
